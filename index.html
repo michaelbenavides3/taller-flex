@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,111 @@
     <nav class="navegador">
         <div class="navegado__logo"><i class="fa-brands fa-github"></i> </div>
         <ul class="navegador__menu">
-            <li class="menu__item">Productos</li>
-            <li class="menu__item">Soporte</li>
-            <li class="menu__item">Contactanos</li>
-            <li class="menu__item">Quienes somor</li>
-            <li class="menu__item--chat">Chat Bot</li>
-            <a href="" class="navegador__link">Enlace</a>
+            <li class="navegador__item">Productos</li>
+            <li class="navegador__item">Soporte</li>
+            <li class="navegador__item">Contactanos</li>
+            <li class="navegador__item">Quienes somos</li>
+            <li class="navegador__item navegador__item--chat">Chat Bot</li>
+            <li class="navegador__item"><a href="" class="navegador__link">Enlace</a></li>
         </ul>
     </nav>
-    
+    <input class="transparencia" type="range" min="0.1" max="1" step="0.1" value="1" oninput="document.body.style.opacity = this.value">
+
+    <div class="tarjeta">
+        <div class="tarjeta__imagen">
+            <img src="img/bart.png" alt="">
+        </div>
+        <h1 class="tarjeta__titulo">BART</h1>
+        <div class="tarjeta__descripcion">
+            Hola Bart
+        </div>
+        <div class="tarjeta__boton">
+            <button>PAY</button>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <div class="tarjeta__imagen">
+            <img src="img/gogory.png" alt="">
+        </div>
+        <h1 class="tarjeta__titulo">BART</h1>
+        <div class="tarjeta__descripcion">
+            Hola Gorgory
+        </div>
+        <div class="tarjeta__boton">
+            <button>PAY</button>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <div class="tarjeta__imagen">
+            <img src="img/tony.png" alt="">
+        </div>
+        <h1 class="tarjeta__titulo">BART</h1>
+        <div class="tarjeta__descripcion">
+            Hola Tony
+        </div>
+        <div class="tarjeta__boton">
+            <button>PAY</button>
+        </div>
+    </div>
+
+    <section class="galeria">
+        <div class="galeria__item">
+            <img src="img/harry.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">HArry</p>
+        </div>
+        <div class="galeria__item">
+            <img src="img/doby.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">doby</p>
+        </div><div class="galeria__item">
+            <img src="img/draco.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">draco</p>
+        </div><div class="galeria__item">
+            <img src="img/donwoldor.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">donwoldor</p>
+        </div><div class="galeria__item">
+            <img src="img/hagri.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">hagri</p>
+        </div><div class="galeria__item">
+            <img src="img/volvemor.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">voldemor</p>
+        </div><div class="galeria__item">
+            <img src="img/snape.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">snape</p>
+        </div><div class="galeria__item">
+            <img src="img/sirius.png" alt="" class="galeria__imagen">
+            <p class="galeria__nombre">sirius</p>
+        </div>
+        
+    </section>
+
+    <form action="#" class="formulario">
+        <div class="formulario__fila">
+            <div class="formulario__campo">
+                <label for="name" class="formulario__label">Nombre: </label>
+                <input type="text" class="formulario__input" id="name" placeholder="tu Nombre">
+            </div>
+            <div class="formulario__campo">
+                <label for="email" class="formulario__label">correo electronico: </label>
+                <input type="email" class="formulario__input" id="email" placeholder="tu_email">
+            </div>
+            <div class="formulario__campo">
+                <label for="edad" class="formulario__label">Edad: </label>
+                <input type="rango" class="formulario__input" id="edad" min="0" max="120" step="1" value="25">
+            </div>
+            <div class="formulario__campo">
+                <label for="telefono" class="formulario__label">Telefono: </label>
+                <input type="telefono" class="formulario__input" id="telefono" placeholder="ingesar telefono">
+            </div>
+            <div class="formulario__campo">
+                <label for="mensaje" class="formulario__label">Mensaje: </label>
+                <textarea name="mensaje" class="formulario__textarea" id="mensajel"></textarea>
+            </div>
+        </div>
+        <div class="formualrio__boton">
+            <button class="formul__submit">SUBMIT</button>
+        </div>
+    </form>
 </body>
 </html>

@@ -6,8 +6,79 @@
 
 body{
     background-color: grey;
+    width: 100%;
 }
 
 .navegador{
     width: 100%;
+    background-color: snow;
+    position: fixed;
+    padding: 1%;
 }
+.navegador__logo{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+
+
+.navegador__menu{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    
+}
+
+.navegador__item{
+    list-style: none;
+    padding: 1%;
+}
+
+.navegador__item--chat{
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.transparencia{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tarjeta{
+    margin-left: 50px;
+    max-width: 1100px;
+    width: 300px;
+    height: 380px;
+    border: 3px solid black;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+
+.tarjeta__imagen, .tarjeta__titulo, .tarjeta__descripcion, .tarjeta__boton{
+    text-align: center;
+    padding: 1px;
+    cursor: progress;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria__item{
+
+    height: 330px;
+    width: 280px;
+    border: 3px gold dotted;
+    margin-top: 15px;
+    text-align: center;
+}
+
+    
+
