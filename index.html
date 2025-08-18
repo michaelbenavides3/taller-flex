@@ -91,23 +91,26 @@
     </section>
 
     <form action="#" class="formulario">
+        <!-- formulario fila1 nombre y edad -->
         <div class="formulario__fila">
-            <div class="formulario__campo">
+            <div class="formulario__campo--izquierda">
                 <label for="name" class="formulario__label">Nombre: </label>
                 <input type="text" class="formulario__input" id="name" placeholder="tu Nombre">
             </div>
-            <div class="formulario__campo">
-                <label for="email" class="formulario__label">correo electronico: </label>
-                <input type="email" class="formulario__input" id="email" placeholder="tu_email">
-            </div>
-            <div class="formulario__campo">
+            <div class="formulario__campo--izquierda">
                 <label for="edad" class="formulario__label">Edad: </label>
                 <input type="rango" class="formulario__input" id="edad" min="0" max="120" step="1" value="25">
+            </div>
+            <!-- fila2 email y telefono -->
+            <div class="formulario__campo-derecha">
+                <label for="email" class="formulario__label">correo electronico: </label>
+                <input type="email" class="formulario__input" id="email" placeholder="tu_email">
             </div>
             <div class="formulario__campo">
                 <label for="telefono" class="formulario__label">Telefono: </label>
                 <input type="telefono" class="formulario__input" id="telefono" placeholder="ingesar telefono">
             </div>
+            <!-- fila3 textare mensaje -->
             <div class="formulario__campo">
                 <label for="mensaje" class="formulario__label">Mensaje: </label>
                 <textarea name="mensaje" class="formulario__textarea" id="mensajel"></textarea>
@@ -117,5 +120,35 @@
             <button class="formul__submit">SUBMIT</button>
         </div>
     </form>
+
+    <div class="encabezado">
+        <!-- icono 1 -->
+         <div class="encabezado__item">
+             <i class="fa-solid fa-bus encabezado__icono"></i>        
+             <h1 class="encabezado__titulo">Parada Bus</h1>
+         </div>
+         <!-- icono 2 -->
+         <div class="encabezado__item">
+             <i class="fa-solid fa-floppy-disk encabezado__icono"></i>
+            <h1 class="encabezado__titulo">Guardar</h1>
+         </div>
+         <!-- iconno 3 -->
+         <div class="encabezado__item">
+             <i class="fa-brands fa-aws encabezado__icono"></i>
+            <h1 class="encabezad__titulo">AWS</h1>
+         </div>
+    </div>
+
+    <!-- lista de tareas -->
+     <div class="lista-tareas">
+        <ul>
+            <li class="lista-tareas__item">Estudair JS</li>
+            <li class="lista-tareas__item">Aprender python</li>
+            <li class="lista-tareas__item">Repazar html y css</li>
+            <li class="lista-tareas__item">Creae BD</li>
+            <li class="lista-tareas__item lista-tareas__item--completada">Metodologia BEM</li>
+        </ul>
+     </div>
+    
 </body>
 </html>

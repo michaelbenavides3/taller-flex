@@ -80,5 +80,43 @@ body{
     text-align: center;
 }
 
-    
+.formulario{
+    background-color: white;
+    border: 3px solid black;
+    margin-top: 15px;
+    display: flex;
+}
+
+.formulario__fila--izquierda{
+    flex-direction: column;
+}
+
+.encabezado{
+    background-color: silver;
+    border: 3px solid black;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.encabezado__item {
+    display: flex;              /* ícono + texto en fila */
+    align-items: center;        /* alinea verticalmente */
+    justify-content: end;
+    gap: 0.5rem;                /* espacio entre ícono y texto */
+    margin-right: 15px;
+}
+
+/* .lista-tareas, ul{
+    display: flex;
+}
+
+.lista-tareas__item{
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+     */
 
