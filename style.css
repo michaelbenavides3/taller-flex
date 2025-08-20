@@ -109,14 +109,51 @@ body{
     margin-right: 15px;
 }
 
-/* .lista-tareas, ul{
+.lista-tareas ul{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    margin-top: 15px;
+    background-color: white;
 }
 
 .lista-tareas__item{
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
+    flex-grow: 1;
+    background-color: lightblue;
+    margin: 5px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    border: 3px skyblue double;
 }
-     */
 
+.lista-tareas__item--completada:hover{
+    background-color: limegreen;
+    transition: 2s;
+    cursor: pointer;
+    border: 3px gray dotted;
+}
+
+.testimonial{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #fafafa;
+}
+
+
+/* .testimonial__avatas{
+    width: 30px;
+    height: 30px;
+} */
+
+.testimonial__contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__nombre
